@@ -12,6 +12,7 @@ namespace call_woter
 {
     public partial class Form1 : Form
     {
+        
         private RadioButton rb_m;
         private RadioButton rb_w;
         private Label txt_v;
