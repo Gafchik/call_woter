@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace call_woter.Model
 {
-    class Proprety_Model
+   public class Proprety_Model
     {
-
+        public string weight { get; set; }
+        public string type_live { get; set; }
+        public string gender { get; set; }
     }
 }
