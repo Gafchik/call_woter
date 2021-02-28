@@ -1,4 +1,5 @@
-﻿using System;
+﻿using call_woter.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,7 @@ namespace call_woter
             InitializeComponent();
             rb_m.Checked = true;
             rb_m.Tag = "Мужской";
-            rb_w.Tag = "Женский";
+            rb_w.Tag = "Женский";           
             weight.Value = 30;
             weight.Maximum = 200;
             weight.Minimum = 30;
@@ -36,7 +37,12 @@ namespace call_woter
 
         private void Go_Click(object sender, EventArgs e)
         {
-            
+            string g;
+            if (rb_m.Checked)
+                g = rb_m.Tag.ToString();
+            else
+                g = rb_m.Tag.ToString();
+            new Propertu_Model_Controler().Write(weight.Value.ToString(), comboBox1.SelectedItem.ToString(), g);
         }
     }
 }
