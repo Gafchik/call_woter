@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace call_woter.Control
 {
-    class Propertu_Model_Controler
+    public interface I_Propertu_Model_Controler
+    {
+         void Write();
+    }
+    class Propertu_Model_Controler : I_Propertu_Model_Controler
     {
 
+        public void Write()
+        {
+            
+        }
     }
 }
